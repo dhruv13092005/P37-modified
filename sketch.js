@@ -2,7 +2,7 @@ var database;
 var canvas;
 
 function setup() {
-    canvas = createCanvas(400,400);
+    canvas = createCanvas(600,1000);
     database = firebase.database();
     button = createButton('Clear');
     button.position(10, 10);
@@ -14,7 +14,7 @@ var db_drawing  = [];
 
 
 function draw() {
-    background(255);
+    background("skyblue");
     readPosition();
     beginShape();
     stroke(0);
